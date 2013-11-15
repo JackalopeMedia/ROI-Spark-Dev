@@ -20,6 +20,16 @@ function register_my_menus() {
 add_action('init', 'register_my_menus');
 
 
+
+/*******************************/
+/* Add Theme Support for Post Thumbnails */
+/*******************************/	
+if (function_exists('add_theme_support')) {
+	add_theme_support('post-thumbnails');
+	set_post_thumbnail_size(181, 83);
+}
+
+
 /*******************************/
 /* Add Meta Boxes to the Posts */
 /*******************************/	

@@ -35,7 +35,7 @@
 <!-- HEADER -->
 			<header class="main-header section-content">
 				<div class="col-sm-8">
-					<a href="<?php echo home_url(); ?>" class="logo"><img src="<?php print IMAGES; ?>/Logo.png" alt="<?php bloginfo('name'); ?>" /></a>
+					<a href="<?php echo home_url(); ?>" class="logo"><img src="<?php print IMAGES; ?>/roispark-logo.png" alt="<?php bloginfo('name'); ?>" /></a>
 				</div>
 				<div class="col-sm-2">	
 					<div class="pull-right">

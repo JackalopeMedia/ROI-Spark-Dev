@@ -29,16 +29,16 @@
 				<section class="clients row">
 					<h1>Clients</h1>
 					<hr>
-					<ul class="inline row">
-						<li id="bumpdown"><img src="./img/build-a-sign.png"></li>
-						<li><img src="./img/tiffs-treats.png"></li>
-						<li><img src="./img/indeed.png"></li>
-					</ul>
-					<ul class="inline row">
-						<li id="bumpdown"><img src="./img/headspring.png"></li>
-						<li><img src="./img/spare-foot.png"></li>
-						<li><img src="./img/logo-garden.png"></li>
+					<?php if (have_posts()) : ?>
+					 <ul class="inline row" id="portfolio-sorting">
+					 <?php while(have_posts()) : the_post(); ?> 
+						<li id="bumpdown"><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail(); ?><?php endif; ?></li>					<?php endwhile; ?>
 					</ul>	
+					<?php else: ?>
+					<div class="container box align-center">
+						<h2>No clients were found.</h2>
+					</div>
+					<?php endif; ?>
 			</section>
 <br />
 <br />

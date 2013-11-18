@@ -13,7 +13,8 @@ define('IMAGES', THEMEROOT.'/img');
 /*******************************/	
 function register_my_menus() {
 	register_nav_menus(array(
-		'main-menu' => 'Main Menu'
+		'main-menu' => 'Main Menu',
+		'category-menu' => 'Category Menu'
 	));
 }
 

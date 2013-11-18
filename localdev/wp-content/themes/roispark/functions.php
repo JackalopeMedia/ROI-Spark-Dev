@@ -46,10 +46,10 @@ function custom_add_meta_box() {
 }
 
 function custom_display_meta_box($post) {
-	$portfolio_description = get_post_meta($post->ID, 'porfolio_description', true);
-	$portfolio_link = get_post_meta($post->ID, 'porfolio_link', true);
-	$portfolio_quote = get_post_meta($post->ID, 'porfolio_quote', true);
-	$portfolio_quote_author = get_post_meta($post->ID, 'porfolio_quote_author', true);
+	$portfolio_description = get_post_meta($post->ID, 'portfolio_description', true);
+	$portfolio_link = get_post_meta($post->ID, 'portfolio_link', true);
+	$portfolio_quote = get_post_meta($post->ID, 'portfolio_quote', true);
+	$portfolio_quote_author = get_post_meta($post->ID, 'portfolio_quote_author', true);
 	
 	// Security Check
 	wp_nonce_field('portfolio_meta_nonce', 'portfolio_nonce');
@@ -64,17 +64,17 @@ function custom_display_meta_box($post) {
 	
 	<p>
 		<label for="portfolio_link">Link:</label><br />
-		<input type="text" name="portfolio_link" id="porfolio_link" value="<?php echo $portfolio_link; ?>" />
+		<input type="text" name="portfolio_link" id="portfolio_link" value="<?php echo $portfolio_link; ?>" />
 	</p>
 	
 	<p>
-		<label for="porfolio_quote">Quote:</label>
+		<label for="portfolio_quote">Quote:</label>
 		<textarea class="widefat" name="portfolio_quote" id="portfolio_quote" cols="30" rows="10"><?php echo $portfolio_quote; ?></textarea>
 	</p>
 	
 	<p>
-		<label for="">Quote Author:</label><br />
-		<input type="text" name="portfolio_quote_author" id="porfolio_quote_author" value="<?php echo $portfolio_quote_author; ?>" />
+		<label for="portfoliio_quote_author">Quote Author:</label><br />
+		<input type="text" name="portfolio_quote_author" id="portfolio_quote_author" value="<?php echo $portfolio_quote_author; ?>" />
 	</p>
 	
 	<?php

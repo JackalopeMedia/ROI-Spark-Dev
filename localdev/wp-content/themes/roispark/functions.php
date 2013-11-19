@@ -8,6 +8,43 @@ define('IMAGES', THEMEROOT.'/img');
 	
 	
 	
+	
+/*******************************/
+/* Client - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'Clients-home',
+		'id'   => 'widgetized-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+
+}
+
+/*******************************/
+/* Client - Full Pager - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'Clients-full',
+		'id'   => 'widgetized-area-full',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+
+}
+	
 /*******************************/
 /* Add Menus */
 /*******************************/	

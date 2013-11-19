@@ -1,5 +1,5 @@
 <?php 
-	/* Template Name: Home */
+	/* Template Name: Clients */
 ?>
 
 
@@ -106,32 +106,11 @@
 	<div class="container">
 		<div class="row"><!-- body and sidebar row -->
 			<div class="col-sm-9">
-				<section class="services">
-					<div class="row">
-						<div class="lead-image">
-							<h1>Services</h1>
-							<hr>
-							<ul class="inline row">
-								<li><i class="icon">Paid Search</i></li>
-								<li><i class="icon">Analytics</i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="lead-image">
-							<ul class="inline row">
-								<li><i class="icon">Paid Search</i></li>
-								<li><i class="icon">Analytics</i></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<br />
 				<br />
 				<section class="clients row">
-					<div id="widgetized-area">
+					<div id="widgetized-area-full">
 
-						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('widgetized-area')) : else : ?>
+						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('widgetized-area-full')) : else : ?>
 
 						<div class="pre-widget">
 							<p><strong>Widgetized Area</strong></p>
@@ -141,14 +120,6 @@
 						<?php endif; ?>
 
 					</div>
-			</section>
-<br />
-<br />
-			<section class="row">
-				<h1>Lorem ipsum dalor</h1>
-					<hr>
-					<br />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed nulla ut lorem fringilla porta in at libero. Suspendisse odio diam, blandit eget ipsum condimentum, volutpat placerat justo. Vestibulum tellus turpis, suscipit vitae fringilla vitae, pellentesque ut tellus. Phasellus eleifend ac neque non consequat. Curabitur aliquet purus turpis, a feugiat felis tristique quis. Aliquam auctor erat non consectetur cursus. Aliquam pulvinar, libero a tincidunt lacinia, diam ligula dapibus quam, non tristique mi augue non nunc. Sed aliquet lorem nulla, vel lacinia dui elementum et. Suspendisse lobortis a ante nec elementum. Donec cursus quam nec mi semper, mattis ultrices quam consequat. Morbi lectus tortor, rhoncus a mollis ut, fringilla vel nibh.</p>	
 			</section>
 <!-- SIDEBAR -->
 			</div>

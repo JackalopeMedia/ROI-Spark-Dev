@@ -51,9 +51,9 @@
 		
 		// Get the website
 		if (trim($_POST['lead-website']) === '') {
-			$error_phone = true;
+			$error_website = true;
 		} else {
-			$phone = trim($_POST['lead-website']);
+			$website = trim($_POST['lead-website']);
 		}
 
 		// Get the project type
@@ -171,12 +171,12 @@
 <!-- End Contact Form Conf. -->
 
 					<h2>Get in touch with us</h2>
-					<form action="<?php the_permalink(); ?>" method="POST" class="lead-form">
+					<form action="<?php the_permalink(); ?>" method="POST" class="lead-form" novalidate>
 						<p <?php if ($error_name) echo 'class="error"'; ?>><input type="text" name="lead-name" id="lead-name" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-name']; ?>" placeholder="Name*" /></p>
 						<p <?php if ($error_email) echo 'class="error"'; ?>><input type="email" name="lead-email" id="lead-email" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-email']; ?>" placeholder="Email*" /></p>
 						<p <?php if ($error_phone) echo 'class="error"'; ?>><input type="text" name="lead-phone" id="lead-phone" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-phone']; ?>" placeholder="Phone*" /></p>
-						<p <?php if ($error_website) echo 'class="error"'; ?>><input type="text" name="lead-website" id="lead-website" value="<?php if (isset($_POST['lead-website'])) echo $_POST['lead-website']; ?>" placeholder="Website"></p>
-						<p <?php if ($error_prj_type) echo 'class="error"'; ?>><select name="lead-project-type" id="lead-project-type" placeholder="Dropdown">
+						<p <?php if ($error_website) echo 'class="error"'; ?>><input type="text" name="lead-website" id="lead-website" value="<?php if (isset($_POST['lead-website'])) echo $_POST['lead-website']; ?>" placeholder="Website*"></p>
+						<p <?php if ($error_prj_type) echo 'class="error"'; ?>><select name="lead-project-type" id="lead-project-type" placeholder="Project Type*">
 							<option value="0">Project type:</option>
 							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '1' ) echo 'selected'; ?>>Website</option>
 							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '2' ) echo 'selected'; ?>>Option #2</option>
@@ -186,8 +186,9 @@
 						</p>
 						<p <?php if ($error_prj_description) echo 'class="error"'; ?>><textarea name="lead-project-description" id="lead-project-description" rows="4"><?php if (isset($_POST['lead-project-description'])) echo $_POST['lead-project-description']; ?></textarea></p>	
 						<div class="cta">
-					<form action="" method="POST" class="lead-form">
-						<input type="submit" class="btn btn-primary" value="SUBMIT" />
+							<input type="hidden" id="lead-submit" name="lead-submit" value="true" />
+							<input type="submit" class="btn btn-primary" value="SUBMIT" />
+						</div>
 					</form>
 				</div>
 				<h1 class="form-number"><i class="phone">512.XXX.XXX</i></h1>

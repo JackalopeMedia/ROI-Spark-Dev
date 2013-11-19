@@ -19,10 +19,23 @@
 		color: #fff;
 	}
 
-	.drop-shadow(4px, 4px, 0, 0, .8);
+	.drop-shadow(4px, 4px, 0, 0, .3);
 }
 
 .lead-form {
+
+	p {
+		&.error {
+			background-color: @light-error;
+			
+			label,
+			input {
+				color: @error;
+			}
+		}
+	}
+	
+	
 	background-color: #fff;
 	border: 1px solid #e7e7e7;
 

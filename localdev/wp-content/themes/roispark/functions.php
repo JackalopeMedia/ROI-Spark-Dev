@@ -10,7 +10,7 @@ define('IMAGES', THEMEROOT.'/img');
 	
 	
 /*******************************/
-/* Client - Widget */
+/* Clients - Widget */
 /*******************************/		
 	
 if (function_exists('register_sidebar')) {
@@ -28,7 +28,7 @@ if (function_exists('register_sidebar')) {
 }
 
 /*******************************/
-/* Client - Full Pager - Widget */
+/* Clients - Full Pager - Widget */
 /*******************************/		
 	
 if (function_exists('register_sidebar')) {
@@ -36,6 +36,24 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(array(
 		'name' => 'Clients-full',
 		'id'   => 'widgetized-area-full',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+
+}
+
+/*******************************/
+/* About Us - Full Pager - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'about-us-area',
+		'id'   => 'about-us-area',
 		'description'   => 'This is a widgetized area.',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',

@@ -107,10 +107,18 @@
 		<div class="row"><!-- body and sidebar row -->
 			<div class="col-sm-9">
 				<section class="row">
-				<h1>Lorem ipsum dalor</h1>
-					<hr>
-					<br />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed nulla ut lorem fringilla porta in at libero. Suspendisse odio diam, blandit eget ipsum condimentum, volutpat placerat justo. Vestibulum tellus turpis, suscipit vitae fringilla vitae, pellentesque ut tellus. Phasellus eleifend ac neque non consequat. Curabitur aliquet purus turpis, a feugiat felis tristique quis. Aliquam auctor erat non consectetur cursus. Aliquam pulvinar, libero a tincidunt lacinia, diam ligula dapibus quam, non tristique mi augue non nunc. Sed aliquet lorem nulla, vel lacinia dui elementum et. Suspendisse lobortis a ante nec elementum. Donec cursus quam nec mi semper, mattis ultrices quam consequat. Morbi lectus tortor, rhoncus a mollis ut, fringilla vel nibh.</p>	
+				<div id="about-us-area">
+
+						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('about-us-area')) : else : ?>
+
+						<div class="pre-widget">
+							<p><strong>Widgetized Area</strong></p>
+							<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+						</div>
+
+						<?php endif; ?>
+
+					</div>	
 			</section>
 <!-- SIDEBAR -->
 			</div>

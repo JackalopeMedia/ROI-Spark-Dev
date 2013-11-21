@@ -40,10 +40,10 @@
 				<div class="col-sm-2">	
 					<div class="pull-right">
 						<ul class="social inline">
-								<li><a href="#" class="icon-facebook"></a></li>
-								<li><a href="#" class="icon-google"></a></li>
-								<li><a href="#" class="icon-mail"></a></li>
-								<li><a href="#" class="icon-linkedin"></a></li>
+								<li><a href="https://www.facebook.com/roisparkconsulting" target="_blank" class="icon-facebook"></a></li>
+								<li><a href="https://plus.google.com/+Roispark/posts" target="_blank" class="icon-google"></a></li>
+								<li><a href="http://kickstartyourbiz.info/contact/" target="_blank" class="icon-mail"></a></li>
+								<li><a href="http://www.linkedin.com/company/roi-spark" target="_blank" class="icon-linkedin"></a></li>
 						</ul>
 					</div>
 				</div>

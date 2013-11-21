@@ -206,25 +206,23 @@
 				<?php endif; ?>
 <!-- End CTA -->	
 
-				<div>
-					<p class="testimonial">
-						Testimonial right here.
-					</p>
-					<p class="testimonial-author">
-						- EJ Lawless, Director
-					</p>
-					<p class="testimonial">
-						Testimonial right here.
-					</p>
-					<p class="testimonial-author">
-						- Randy Varella, Director
-					</p>
-				</div>
+				<div id="testimonial-area">
+
+						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('testimonial-area')) : else : ?>
+
+						<div class="pre-widget">
+							<p><strong>Widgetized Area</strong></p>
+							<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+						</div>
+
+						<?php endif; ?>
+
+					</div>
 
 				<section>
 					<ul class="trust inline">
-						<li><img src="img/trust1.jpg"></li>
-						<li><img src="img/trust2.jpg"></li>
+						<li><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/trust1.jpg"></li>
+						<li><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/trust1.jpg"></li>
 					</ul>
 				</section>
 			</div>

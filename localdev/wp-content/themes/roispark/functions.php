@@ -62,6 +62,42 @@ if (function_exists('register_sidebar')) {
 	));
 
 }
+
+/*******************************/
+/* Contact Page Section - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'contact-us-area',
+		'id'   => 'contact-us-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+
+}
+
+/*******************************/
+/* Sidebar Testimonials - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'testimonial-area',
+		'id'   => 'testimonial-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+
+}
 	
 /*******************************/
 /* Add Menus */

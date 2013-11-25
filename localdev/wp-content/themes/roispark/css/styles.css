@@ -13,7 +13,8 @@
 /**************************************************************************************/
 /**************************************************************************************/
 /* LESS MIXINS */
-/**************************************************************************************//*!
+/**************************************************************************************/
+/*!
  * Bootstrap v3.0.2
  *
  * Copyright 2013 Twitter, Inc
@@ -1600,6 +1601,9 @@ select {
 .inline li:last-child {
   margin-right: 0;
 }
+.testimonial-padding {
+  padding-top: 15px;
+}
 /**************************************************************************************/
 /* @FONT-FACE */
 /**************************************************************************************/
@@ -1619,7 +1623,6 @@ select {
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1663,7 +1666,6 @@ h1 {
   font-size: 32px;
   line-height: 1.4em;
   /* 1.4em */
-
 }
 h2 {
   font-size: 22px;
@@ -1699,19 +1701,22 @@ li {
   background-color: #ff831d;
 }
 .main-nav ul {
-  margin-top: ;
+  height: 66px;
 }
 .main-nav ul li {
+  height: 66px;
   font-size: 24px;
   font-family: 'Ubuntu Condensed', sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
+  /* margin-top: -0px; bumps shit up to the top of nav-bar */
+}
+.main-nav ul li:hover {
+  background-color: #cb4800;
+  text-decoration: none;
 }
 .main-nav ul li a {
   color: #ffffff;
-}
-.main-nav ul li a:hover {
-  background-color: #cb4800;
-  text-decoration: none;
 }
 /**************************************************************************************/
 /* UI */
@@ -1721,9 +1726,9 @@ li {
   height: 542px;
   margin: -225px 0 0 0;
   background-color: #32302b;
-  -webkit-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.8);
-  -moz-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.8);
-  box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.8);
+  -webkit-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.3);
+  -moz-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.3);
+  box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.3);
 }
 .top-form h1 {
   color: #ff7300;
@@ -1738,6 +1743,13 @@ li {
   background-color: #fff;
   border: 1px solid #e7e7e7;
 }
+.lead-form p.error {
+  background-color: #fff5f5;
+}
+.lead-form p.error label,
+.lead-form p.error input {
+  color: #ff0000;
+}
 .lead-form input {
   width: 227px;
   height: 31px;
@@ -1750,16 +1762,16 @@ li {
 #lead-name {
   margin-top: 22px;
 }
-#lead-comments {
+#lead-project-description {
   width: 227px;
   border: 1px solid #e7e7e7;
   margin-top: 17px;
   margin-bottom: 17px;
 }
-#lead-comments:focus {
+#lead-project-description:focus {
   border: 1px solid #9f9f9f;
 }
-#lead-dropdown {
+#lead-project-type {
   width: 227px;
   border: 1px solid #e7e7e7;
   color: #747474;
@@ -1790,7 +1802,6 @@ li {
 /* Services */
 .services ul {
   /*padding-top: 10px;*/
-
 }
 .services ul li {
   width: 284px;
@@ -1819,7 +1830,6 @@ li {
 /* Clients */
 .clients ul {
   /*padding-top: 10px;*/
-
   display: block;
 }
 .clients ul li {
@@ -1845,4 +1855,11 @@ hr {
   float: left;
   margin-top: 0px;
   margin-bottom: -15px;
+}
+.hover-state {
+  position: absolute;
+  width: 284px;
+  height: 183px;
+  left: 3555px;
+  top: 3px;
 }

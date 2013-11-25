@@ -1691,7 +1691,10 @@ li {
 .main-head {
   width: 100%;
   height: 195px;
-  background-color: #454442;
+  background-color: #474745;
+}
+.header-img {
+  margin: -194px 0 0 0;
 }
 .main-nav {
   width: 100%;
@@ -1721,9 +1724,9 @@ li {
   height: 542px;
   margin: -225px 0 0 0;
   background-color: #32302b;
-  -webkit-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.8);
-  -moz-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.8);
-  box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.8);
+  -webkit-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.3);
+  -moz-box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.3);
+  box-shadow: 4px 4px 0 0 rgba(231, 231, 231, 0.3);
 }
 .top-form h1 {
   color: #ff7300;
@@ -1737,6 +1740,13 @@ li {
 .lead-form {
   background-color: #fff;
   border: 1px solid #e7e7e7;
+}
+.lead-form p.error {
+  background-color: #fff5f5;
+}
+.lead-form p.error label,
+.lead-form p.error input {
+  color: #ff0000;
 }
 .lead-form input {
   width: 227px;

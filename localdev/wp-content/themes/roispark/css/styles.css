@@ -1715,6 +1715,27 @@ li {
   background-color: #cb4800;
   text-decoration: none;
 }
+footer {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-top: 1px solid #CECECE;
+  padding-top: 0px;
+}
+footer a {
+  color: #ff7300;
+}
+footer a:hover {
+  color: #ff7300;
+}
+footer p {
+  padding-top: 3px;
+  color: #9e9e9e;
+}
+.footer-stuff {
+  margin-bottom: 35px;
+}
 /**************************************************************************************/
 /* UI */
 /**************************************************************************************/

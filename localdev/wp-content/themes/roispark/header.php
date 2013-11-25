@@ -34,16 +34,16 @@
 		<div class="row">
 <!-- HEADER -->
 			<header class="main-header section-content">
-				<div class="col-sm-8">
+				<div class="col-sm-7">
 					<a href="<?php echo home_url(); ?>" class="logo"><img src="<?php print IMAGES; ?>/roispark-logo.png" alt="<?php bloginfo('name'); ?>" /></a>
 				</div>
-				<div class="col-sm-2">	
+				<div class="col-sm-3">	
 					<div class="pull-right">
 						<ul class="social inline">
-								<li><a href="https://www.facebook.com/roisparkconsulting" target="_blank" class="icon-facebook"></a></li>
-								<li><a href="https://plus.google.com/+Roispark/posts" target="_blank" class="icon-google"></a></li>
-								<li><a href="http://kickstartyourbiz.info/contact/" target="_blank" class="icon-mail"></a></li>
-								<li><a href="http://www.linkedin.com/company/roi-spark" target="_blank" class="icon-linkedin"></a></li>
+								<li><a href="https://www.facebook.com/roisparkconsulting" target="_blank" class="i-facebook"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Facebook1.png"></a></li>
+								<li><a href="https://plus.google.com/+Roispark/posts" target="_blank" class="i-google"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Googleplus1.png"></a></li>
+								<li><a href="http://kickstartyourbiz.info/contact/" target="_blank" class="i-mail"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Email1.png"></a></li>
+								<li><a href="http://www.linkedin.com/company/roi-spark" target="_blank" class="i-linkedin"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Linkedin1.png"></a></li>
 						</ul>
 					</div>
 				</div>

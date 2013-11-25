@@ -1757,6 +1757,7 @@ li {
   border: 1px solid #9f9f9f;
 }
 #lead-name {
+  /* yes */
   margin-top: 22px;
 }
 #lead-project-description {

@@ -30,14 +30,14 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="container">
+	<div class="container-non-responsive">
 		<div class="row">
 <!-- HEADER -->
 			<header class="main-header section-content">
-				<div class="col-sm-7">
+				<div class="col-xs-7">
 					<a href="<?php echo home_url(); ?>" class="logo"><img src="<?php print IMAGES; ?>/roispark-logo.png" alt="<?php bloginfo('name'); ?>" /></a>
 				</div>
-				<div class="col-sm-3">	
+				<div class="col-xs-3">	
 					<div class="pull-right">
 						<ul class="social inline">
 								<li><a href="https://www.facebook.com/roisparkconsulting" target="_blank" class="i-facebook"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Facebook1.png"></a></li>
@@ -47,7 +47,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 					<div class="pull-right">	
 						<ul class="social inline">
 								<h1>512.XXX.XXX</h1>
@@ -58,17 +58,17 @@
 		</div>
 	</div>
 	<nav class="main-nav">
-		<div class="container">
+		<div class="container-non-responsive">
 		<?php 
 		wp_nav_menu(array(
 			'theme_location' => 'main-menu',
-			'container' => '',
+			'container-non-responsive' => '',
 			'menu_class' => 'inline'
 		));	
 		?>
 		</div>
 	</nav>
 	<nav class="main-head">
-		<div class="container">
+		<div class="container-non-responsive">
 		</div>
 	</nav>

@@ -23,7 +23,6 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>'
 	));
-
 }
 
 /*******************************/
@@ -41,7 +40,6 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>'
 	));
-
 }
 
 /*******************************/
@@ -59,7 +57,6 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>'
 	));
-
 }
 
 /*******************************/
@@ -77,7 +74,6 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>'
 	));
-
 }
 
 /*******************************/
@@ -95,7 +91,6 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>'
 	));
-
 }
 
 /*******************************/
@@ -113,8 +108,76 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>'
 	));
-
 }
+
+/*******************************/
+/* Paid Search Area - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'paid-search-area',
+		'id'   => 'paid-search-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+/*******************************/
+/* Analytics Area - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'analytics-area',
+		'id'   => 'analytics-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+/*******************************/
+/* CRO Area - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'cro-area',
+		'id'   => 'cro-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+/*******************************/
+/* Social Media Area - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'social-media-area',
+		'id'   => 'social-media-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
 	
 /*******************************/
 /* Add Menus */

@@ -13,8 +13,7 @@
 /**************************************************************************************/
 /**************************************************************************************/
 /* LESS MIXINS */
-/**************************************************************************************/
-/*!
+/**************************************************************************************//*!
  * Bootstrap v3.0.2
  *
  * Copyright 2013 Twitter, Inc
@@ -1621,6 +1620,7 @@ select {
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1664,6 +1664,7 @@ h1 {
   font-size: 32px;
   line-height: 1.4em;
   /* 1.4em */
+
 }
 h2 {
   font-size: 22px;
@@ -1747,6 +1748,17 @@ footer p {
   margin-left: -20px;
   width: 600px;
 }
+.container-non-responsive {
+  /* Margin/padding copied from Bootstrap */
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 105px;
+  padding-right: 15px;
+  /* Set width to your desired site width */
+
+  width: 1050px;
+}
 /**************************************************************************************/
 /* UI */
 /**************************************************************************************/
@@ -1790,6 +1802,7 @@ footer p {
 }
 #lead-name {
   /* yes */
+
   margin-top: 22px;
 }
 #lead-project-description {
@@ -1832,6 +1845,7 @@ footer p {
 /* Services */
 .services ul {
   /*padding-top: 10px;*/
+
 }
 .services ul li {
   width: 284px;
@@ -1860,6 +1874,7 @@ footer p {
 /* Clients */
 .clients ul {
   /*padding-top: 10px;*/
+
   display: block;
 }
 .clients ul li {

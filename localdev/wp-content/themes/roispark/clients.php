@@ -103,9 +103,9 @@
 <?php get_header(); ?>
 
 <!-- Start Body -->
-	<div class="container">
+	<div class="container-non-responsive">
 		<div class="row"><!-- body and sidebar row -->
-			<div class="col-sm-9">
+			<div class="col-xs-9">
 				<br />
 				<section class="clients row">
 					<div id="widgetized-area-full">
@@ -123,7 +123,7 @@
 			</section>
 <!-- SIDEBAR -->
 			</div>
-			<div class="col-sm-3">
+			<div class="col-xs-3">
 				<div class="sidebar-top sidebar-side top-form align-center row">
 
 <!-- Contect Form Confirmation -->

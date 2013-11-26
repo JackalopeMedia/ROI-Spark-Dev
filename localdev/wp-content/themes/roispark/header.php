@@ -30,7 +30,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="container">
+	<div class="container-non-responsive">
 		<div class="row">
 <!-- HEADER -->
 			<header class="main-header section-content">
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	<nav class="main-nav">
-		<div class="container">
+		<div class="container-non-responsive">
 		<?php 
 		wp_nav_menu(array(
 			'theme_location' => 'main-menu',
@@ -69,6 +69,6 @@
 		</div>
 	</nav>
 	<nav class="main-head">
-		<div class="container">
+		<div class="container-non-responsive">
 		</div>
 	</nav>

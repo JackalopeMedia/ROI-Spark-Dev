@@ -102,6 +102,29 @@
 
 <?php get_header(); ?>
 
+<!-- Start Header Img -->
+<div class="container-non-responsive">
+	<div class="col-xs-9">
+		<div id="widgetized-area">
+			<div class="header-img">
+	
+				<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('header-img')) : else : ?>
+	
+				<div class="pre-widget">
+					<p><strong>Widgetized Area</strong></p>
+					<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+				</div>
+	
+				<?php endif; ?>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Header Img -->
+
+
 <!-- Start Body -->
 	<div class="container-non-responsive">
 		<div class="row"><!-- body and sidebar row -->
@@ -142,12 +165,12 @@
 <!-- End Contact Form Conf. -->
 
 					<h2>Get in touch with us</h2>
-					<form action="<?php the_permalink(); ?>" method="POST" class="lead-form" novalidate>
-						<p <?php if ($error_name) echo 'class="error"'; ?>><input type="text" name="lead-name" id="lead-name" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-name']; ?>" placeholder="Name*" /></p>
-						<p <?php if ($error_email) echo 'class="error"'; ?>><input type="email" name="lead-email" id="lead-email" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-email']; ?>" placeholder="Email*" /></p>
-						<p <?php if ($error_phone) echo 'class="error"'; ?>><input type="text" name="lead-phone" id="lead-phone" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-phone']; ?>" placeholder="Phone*" /></p>
-						<p <?php if ($error_website) echo 'class="error"'; ?>><input type="text" name="lead-website" id="lead-website" value="<?php if (isset($_POST['lead-website'])) echo $_POST['lead-website']; ?>" placeholder="Website*"></p>
-						<p <?php if ($error_prj_type) echo 'class="error"'; ?>><select name="lead-project-type" id="lead-project-type" placeholder="Project Type*">
+					<form action="mailer.php" method="POST" class="lead-form" novalidate>
+						<p <?php if ($error_name) echo 'class="error"'; ?>><input type="text" name="inputName" id="lead-name" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-name']; ?>" placeholder="Name*" /></p>
+						<p <?php if ($error_email) echo 'class="error"'; ?>><input type="email" name="inputEmail" id="lead-email" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-email']; ?>" placeholder="Email*" /></p>
+						<p <?php if ($error_phone) echo 'class="error"'; ?>><input type="text" name="inputPhone" id="lead-phone" value="<?php if (isset($_POST['lead-name'])) echo $_POST['lead-phone']; ?>" placeholder="Phone*" /></p>
+						<p <?php if ($error_website) echo 'class="error"'; ?>><input type="text" name="inputWebsite" id="lead-website" value="<?php if (isset($_POST['lead-website'])) echo $_POST['lead-website']; ?>" placeholder="Website"></p>
+						<p <?php if ($error_prj_type) echo 'class="error"'; ?>><select name="inputProject" id="lead-project-type" placeholder="Project Type*">
 							<option value="0">Project type:</option>
 							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '1' ) echo 'selected'; ?>>Website</option>
 							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '2' ) echo 'selected'; ?>>Option #2</option>
@@ -155,19 +178,19 @@
 							</select>
 						
 						</p>
-						<p <?php if ($error_prj_description) echo 'class="error"'; ?>><textarea name="lead-project-description" id="lead-project-description" rows="4"><?php if (isset($_POST['lead-project-description'])) echo $_POST['lead-project-description']; ?></textarea></p>	
+						<p <?php if ($error_prj_description) echo 'class="error"'; ?>><textarea name="inputMessage" id="lead-project-description" rows="4" placeholder="Comments"><?php if (isset($_POST['lead-project-description'])) echo $_POST['lead-project-description']; ?></textarea></p>	
 						<div class="cta">
 							<input type="hidden" id="lead-submit" name="lead-submit" value="true" />
 							<input type="submit" class="btn btn-primary" value="SUBMIT" />
 						</div>
 					</form>
+				<i class="icon-search-form"></i><h1 class="form-number"><i class="phone">512.XXX.XXX</i></h1>
 				</div>
-				<h1 class="form-number"><i class="phone">512.XXX.XXX</i></h1>
 					</form>		
 				</div>
 				
 				<?php endif; ?>
-<!-- End CTA -->	
+<!-- End CTA -->
 
 				<div id="testimonial-area">
 

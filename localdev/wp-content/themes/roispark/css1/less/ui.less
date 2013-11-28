@@ -1,0 +1,166 @@
+/**************************************************************************************/
+/* UI */
+/**************************************************************************************/
+
+.top-form {
+	width: 267px;
+	height: 542px;
+	margin:-225px 0 0 0;
+	background-color: #32302b;
+
+	h1 {
+		color: #ff7300;
+		padding-top: 10px;
+	}
+
+	h2 {
+		padding-top: 15px;
+		padding-bottom: 5px;
+		color: #fff;
+	}
+
+	.drop-shadow(4px, 4px, 0, 0, .8);
+}
+
+.lead-form {
+
+	p {
+		&.error {
+			background-color: @light-error;
+			
+			label,
+			input {
+				color: @error;
+			}
+		}
+	}
+	
+	
+	background-color: #fff;
+	border: 1px solid #e7e7e7;
+
+	input {
+		width: 227px;
+		height: 31px;
+		border: 1px solid #e7e7e7;
+		margin-bottom: 18px;
+
+		&:focus {
+			border: 1px solid #9f9f9f;
+		}
+	}
+}
+
+#lead-name { /* yes */
+	margin-top: 22px;
+}
+
+#lead-project-description {
+	width: 227px;
+	border: 1px solid #e7e7e7;
+	margin-top: 17px;
+	margin-bottom: 17px;
+
+	&:focus {
+		border: 1px solid #9f9f9f;
+	}
+}
+
+#lead-project-type {
+	width: 227px;
+	border: 1px solid #e7e7e7;
+	color: #747474;
+	height: 31px;
+}
+
+.btn, .btn-primary {
+	background-color: #ce5310;
+	color: #fff;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 24px;
+}
+
+.testimonial {
+	padding-top: 25px;
+	text-align: left;
+}
+
+.testimonial-author {
+	text-align: right;
+	color: #ff7300;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+.trust {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Services */
+
+.services {
+	ul {
+		/*padding-top: 10px;*/
+
+		li {
+			width: 284px;
+			height: 183px;
+			border: 1px solid #e7e7e7;
+			background-color: #fff;
+			text-align: left;
+			color: #7d7d7d;
+			font-size: 24px;
+			font-family: 'Ubuntu Condensed', sans-serif;
+			padding-top: 75px;
+			padding-left: 100px;
+			text-transform: uppercase;
+
+			.drop-shadow(4px, 3px, 0, 0, 1);
+
+			&:hover {
+				background-color: #ff8119;
+				border: 1px solid #ff8119;
+				color: #fff;
+
+				.drop-shadow-hover(4px, 3px, 0, 0, 1);
+			}
+		}
+	}
+}
+
+/* Clients */
+
+.clients {
+	ul {
+		/*padding-top: 10px;*/
+		display: block;
+
+		li {
+			display: inline-block;
+			width: 181px;
+			height: 83px;
+			border: 1px solid #e7e7e7;
+			background-color: #fff;
+			text-align: center;
+			padding: 5px;
+			float: left;
+
+			.drop-shadow(4px, 3px, 0, 0, 1);
+		}
+	}
+}
+
+#bumpdown {
+	padding-top: 28px;
+}
+
+hr {
+	background-color: #32302b;
+	width: 600px;
+	height: 6px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: -15px;
+}

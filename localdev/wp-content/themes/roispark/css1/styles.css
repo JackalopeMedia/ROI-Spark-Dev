@@ -1694,6 +1694,9 @@ body {
 li {
   margin-top: 27px;
 }
+/*.logo {
+	padding-bottom: 25px;
+}*/
 .main-head {
   width: 100%;
   height: 195px;
@@ -1708,7 +1711,7 @@ li {
 	background-color: @nav-bar;
 
 	ul {
-		margin-top: ;
+
 		li {
 			font-size: 24px;
 			font-family: 'Ubuntu Condensed', sans-serif;
@@ -1741,7 +1744,7 @@ li {
   color: #ffffff;
   display: block;
   /* Add */
-  padding: 20px 7px;
+  padding: 20px 0;
   /* Add */
 }
 .main-nav ul li a:hover {
@@ -1772,15 +1775,6 @@ footer p {
 #about-us-area {
   margin-left: -20px;
   width: 600px;
-}
-.container-non-responsive {
-  /* Margin/padding copied from Bootstrap */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 105px;
-  padding-right: 15px;
-  /* Set width to your desired site width */
-  width: 1050px;
 }
 /**************************************************************************************/
 /* UI */

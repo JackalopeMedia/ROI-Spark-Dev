@@ -1741,7 +1741,7 @@ li {
   color: #ffffff;
   display: block;
   /* Add */
-  padding: 20px 7px;
+  padding: 20px 0;
   /* Add */
 }
 .main-nav ul li a:hover {

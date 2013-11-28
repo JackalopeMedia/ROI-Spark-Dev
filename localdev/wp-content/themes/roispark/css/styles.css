@@ -1624,26 +1624,41 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-mail:before {
+.icon-search:before {
   content: "\e600";
+  font-size: 30px;
+  position: absolute;
+  top: 148px;
+  left: 50px;
 }
-.icon-google-plus:before {
+.icon-stats:before {
   content: "\e601";
+  font-size: 30px;
+  position: absolute;
+  top: 148px;
+  left: 358px;
 }
-.icon-twitter:before {
+.icon-filter:before {
   content: "\e602";
+  font-size: 30px;
+  position: absolute;
+  top: 365px;
+  left: 48px;
 }
-.icon-facebook:before {
+.icon-users:before {
   content: "\e603";
+  font-size: 30px;
+  position: absolute;
+  top: 365px;
+  left: 358px;
 }
-.icon-linkedin:before {
+.icon-search-form:before {
   content: "\e604";
-}
-.icon-phone:before {
-  content: "\e605";
-}
-.icon-phone-hang-up:before {
-  content: "\e606";
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 258px;
+  left: 40px;
 }
 /**************************************************************************************/
 /* GENERAL TYPOGRAPHY STYLES */

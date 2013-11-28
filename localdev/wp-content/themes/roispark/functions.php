@@ -178,6 +178,76 @@ if (function_exists('register_sidebar')) {
 	));
 }
 
+/*******************************/
+/* PPC Header Img - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'ppc-header-img',
+		'id'   => 'ppc-header-img',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+
+/*******************************/
+/* Analytics Header Img - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'analytics-header-img',
+		'id'   => 'analytics-header-img',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+/*******************************/
+/* Optimization Header Img - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'optimization-header-img',
+		'id'   => 'optimization-header-img',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+
+/*******************************/
+/* Social Media Header Img - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'social-media-header-img',
+		'id'   => 'social-media-header-img',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
 	
 /*******************************/
 /* Add Menus */

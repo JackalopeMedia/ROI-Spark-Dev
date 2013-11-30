@@ -172,9 +172,9 @@
 						<p <?php if ($error_website) echo 'class="error"'; ?>><input type="text" name="inputWebsite" id="lead-website" value="<?php if (isset($_POST['lead-website'])) echo $_POST['lead-website']; ?>" placeholder="Website"></p>
 						<p <?php if ($error_prj_type) echo 'class="error"'; ?>><select name="inputProject" id="lead-project-type" placeholder="Project Type*">
 							<option value="0">Project type:</option>
-							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '1' ) echo 'selected'; ?>>Website</option>
-							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '2' ) echo 'selected'; ?>>Option #2</option>
-							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '3' ) echo 'selected'; ?>>Option #3</option>
+							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '1' ) echo 'selected'; ?>>Paid Search Marketing</option>
+							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '2' ) echo 'selected'; ?>>Social Media Advertising</option>
+							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '3' ) echo 'selected'; ?>>Web Analytics Consulting</option>
 							</select>
 						
 						</p>
@@ -184,7 +184,7 @@
 							<input type="submit" class="btn btn-primary" value="SUBMIT" />
 						</div>
 					</form>
-				<i class="icon-search-form"></i><h1 class="form-number"><i class="phone">512.XXX.XXX</i></h1>
+				<div class="number-down"><i class="icon-search-form"></i><h1 class="form-number"><i class="phone">512.XXX.XXX</i></h1></div>
 				</div>
 					</form>		
 				</div>

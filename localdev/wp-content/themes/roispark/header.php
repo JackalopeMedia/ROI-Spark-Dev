@@ -39,7 +39,7 @@
 				</div>
 				<div class="col-xs-3">	
 					<div class="pull-right">
-						<ul class="social inline">
+						<ul class="social inline social-icons-padding">
 								<li><a href="https://www.facebook.com/roisparkconsulting" target="_blank" class="i-facebook"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Facebook1.png"></a></li>
 								<li><a href="https://plus.google.com/+Roispark/posts" target="_blank" class="i-google"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Googleplus1.png"></a></li>
 								<li><a href="http://kickstartyourbiz.info/contact/" target="_blank" class="i-mail"><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/Email1.png"></a></li>
@@ -49,7 +49,7 @@
 				</div>
 				<div class="col-xs-2">
 					<div class="pull-right">	
-						<ul class="social inline">
+						<ul class="social inline phone-number-padding">
 								<h1>512.XXX.XXX</h1>
 						</ul>
 					</div>

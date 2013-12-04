@@ -171,9 +171,12 @@
 						<p <?php if ($error_website) echo 'class="error"'; ?>><input type="text" name="inputWebsite" id="lead-website" value="<?php if (isset($_POST['lead-website'])) echo $_POST['lead-website']; ?>" placeholder="Website"></p>
 						<p <?php if ($error_prj_type) echo 'class="error"'; ?>><select name="inputProject" id="lead-project-type" placeholder="Project Type*">
 							<option value="0">Project type:</option>
-							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '1' ) echo 'selected'; ?>>Paid Search Marketing</option>
-							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '2' ) echo 'selected'; ?>>Social Media Advertising</option>
-							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == '3' ) echo 'selected'; ?>>Web Analytics Consulting</option>
+							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Paid Search Marketing' ) echo 'selected'; ?>>Paid Search Marketing</option>
+							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Social Media Advertising' ) echo 'selected'; ?>>Social Media Advertising</option>
+							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Web Analytics Consulting' ) echo 'selected'; ?>>Web Analytics Consulting</option>
+							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Landing Page Optimization' ) echo 'selected'; ?>>Landing Page Optimization</option>
+							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Organic SEO Consulting' ) echo 'selected'; ?>>Organic SEO Consulting</option>
+							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Affiliate Marketing' ) echo 'selected'; ?>>Affiliate Marketing</option>
 							</select>
 						
 						</p>

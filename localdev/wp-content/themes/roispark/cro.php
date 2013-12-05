@@ -190,9 +190,9 @@
 							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Paid Search Marketing' ) echo 'selected'; ?>>Paid Search Marketing</option>
 							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Social Media Advertising' ) echo 'selected'; ?>>Social Media Advertising</option>
 							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Web Analytics Consulting' ) echo 'selected'; ?>>Web Analytics Consulting</option>
-							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Landing Page Optimization' ) echo 'selected'; ?>>Landing Page Optimization</option>
-							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Organic SEO Consulting' ) echo 'selected'; ?>>Organic SEO Consulting</option>
-							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Affiliate Marketing' ) echo 'selected'; ?>>Affiliate Marketing</option>
+							<option value="4" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Landing Page Optimization' ) echo 'selected'; ?>>Landing Page Optimization</option>
+							<option value="5" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Organic SEO Consulting' ) echo 'selected'; ?>>Organic SEO Consulting</option>
+							<option value="6" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Affiliate Marketing' ) echo 'selected'; ?>>Affiliate Marketing</option>
 							</select>
 						
 						</p>

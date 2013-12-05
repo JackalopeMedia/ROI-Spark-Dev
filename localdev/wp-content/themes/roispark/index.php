@@ -137,16 +137,16 @@
 							<h1>Services</h1>
 							<hr>
 							<ul class="inline row">
-								<li><i class="icon-search"></i> Paid Search</li>
-								<li><i class="icon-stats"></i> Web Analytics</li>
+								<a href="http://roispark.com/paid-search-marketing/"><li><i class="icon-search"></i> Paid Search</li></a>
+								<a href="http://roispark.com/web-analytics-consulting/"><li><i class="icon-stats"></i> Web Analytics</li></a>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="lead-image">
 							<ul class="inline row">
-								<li><i class="icon-filter"></i> Landing Page Optimization</li>
-								<li><i class="icon-users"></i> Social Media Advertising</li>
+								<a href="http://roispark.com/landing-page-optimization/"><li><i class="icon-filter"></i> Landing Page Optimization</li></a>
+								<a href="http://roispark.com/social-media-advertising/"><li><i class="icon-users"></i> Social Media Advertising</li></a>
 							</ul>
 						</div>
 					</div>

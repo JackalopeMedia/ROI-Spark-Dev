@@ -170,9 +170,9 @@
 <br />
 <br />
 			<section class="row">
-			<div id="about-us-area">
+			<div class="home-bottom-area" id="home-bottom-area">
 
-						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('about-us-area')) : else : ?>
+						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('home-bottom-area')) : else : ?>
 
 						<div class="pre-widget">
 							<p><strong>Widgetized Area</strong></p>
@@ -214,9 +214,9 @@
 							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Paid Search Marketing' ) echo 'selected'; ?>>Paid Search Marketing</option>
 							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Social Media Advertising' ) echo 'selected'; ?>>Social Media Advertising</option>
 							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Web Analytics Consulting' ) echo 'selected'; ?>>Web Analytics Consulting</option>
-							<option value="1" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Landing Page Optimization' ) echo 'selected'; ?>>Landing Page Optimization</option>
-							<option value="2" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Organic SEO Consulting' ) echo 'selected'; ?>>Organic SEO Consulting</option>
-							<option value="3" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Affiliate Marketing' ) echo 'selected'; ?>>Affiliate Marketing</option>
+							<option value="4" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Landing Page Optimization' ) echo 'selected'; ?>>Landing Page Optimization</option>
+							<option value="5" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Organic SEO Consulting' ) echo 'selected'; ?>>Organic SEO Consulting</option>
+							<option value="6" <?php if (isset($_POST['lead-project-type']) && $_POST['lead-project-type']  == 'Affiliate Marketing' ) echo 'selected'; ?>>Affiliate Marketing</option>
 							</select>
 						
 						</p>
@@ -250,10 +250,20 @@
 					</div>
 
 				<section>
-					<ul class="trust inline">
-						<li><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/trust1.jpg"></li>
-						<li><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/trust1.jpg"></li>
-					</ul>
+					<div id="widgetized-area">
+						<div class="certifications">
+	
+							<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('certifications')) : else : ?>
+	
+							<div class="pre-widget">
+								<p><strong>Widgetized Area</strong></p>
+								<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+							</div>
+	
+				<?php endif; ?>
+	
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>

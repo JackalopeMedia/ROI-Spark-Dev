@@ -60,6 +60,23 @@ if (function_exists('register_sidebar')) {
 }
 
 /*******************************/
+/* Home Page Bottom - Full Pager - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'home-bottom-area',
+		'id'   => 'home-bottom-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+/*******************************/
 /* About Us - Full Pager - Widget */
 /*******************************/		
 	
@@ -240,6 +257,24 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(array(
 		'name' => 'social-media-header-img',
 		'id'   => 'social-media-header-img',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+
+/*******************************/
+/* Certifications - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'certifications',
+		'id'   => 'certifications',
 		'description'   => 'This is a widgetized area.',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',

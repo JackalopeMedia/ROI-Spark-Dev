@@ -207,10 +207,20 @@
 					</div>
 
 				<section>
-					<ul class="trust inline">
-						<li><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/trust1.jpg"></li>
-						<li><img src="http://kickstartyourbiz.info/wp-content/uploads/2013/11/trust1.jpg"></li>
-					</ul>
+					<div id="widgetized-area">
+						<div class="certifications">
+	
+							<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('certifications')) : else : ?>
+	
+							<div class="pre-widget">
+								<p><strong>Widgetized Area</strong></p>
+								<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+							</div>
+	
+				<?php endif; ?>
+	
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>

@@ -137,16 +137,16 @@
 							<h1>Services</h1>
 							<hr>
 							<ul class="inline row">
-								<a href="http://roispark.com/paid-search-marketing/"><li><i class="icon-search"></i> Paid Search</li></a>
-								<a href="http://roispark.com/web-analytics-consulting/"><li><i class="icon-stats"></i> Web Analytics</li></a>
+								<a href="http://roispark.com/paid-search-marketing/"><li class="services-padding2"><i class="icon-search"></i> Paid Search</li></a>
+								<a href="http://roispark.com/web-analytics-consulting/"><li class="services-padding"><i class="icon-stats"></i> Web Analytics</li></a>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="lead-image">
 							<ul class="inline row">
-								<a href="http://roispark.com/landing-page-optimization/"><li><i class="icon-filter"></i> Landing Page Optimization</li></a>
-								<a href="http://roispark.com/social-media-advertising/"><li><i class="icon-users"></i> Social Media Advertising</li></a>
+								<a href="http://roispark.com/landing-page-optimization/"><li class="services-padding2"><i class="icon-filter"></i> Landing Page Optimization</li></a>
+								<a href="http://roispark.com/social-media-advertising/"><li class="services-padding"><i class="icon-users"></i> Social Media Advertising</li></a>
 							</ul>
 						</div>
 					</div>
@@ -170,7 +170,7 @@
 <br />
 <br />
 			<section class="row">
-			<div class="home-bottom-area" id="home-bottom-area">
+			<div class="home-bottom-area home-bottom-padding" id="home-bottom-area">
 
 						<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('home-bottom-area')) : else : ?>
 
@@ -226,8 +226,18 @@
 							<input type="submit" class="btn btn-primary" value="SUBMIT" />
 						</div>
 					</form>
-				<div class="number-down"><i class="icon-search-form"></i><h1 class="form-number"><i class="phone">512.XXX.XXX</i></h1></div>
-				</div>
+					<div id="phone-number">
+	
+							<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('phone-number')) : else : ?>
+	
+							<div class="pre-widget">
+								<p><strong>Widgetized Area</strong></p>
+								<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+							</div>
+	
+							<?php endif; ?>
+	
+						</div>	
 					</form>		
 				</div>
 

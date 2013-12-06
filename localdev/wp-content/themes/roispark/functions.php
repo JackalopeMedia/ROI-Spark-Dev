@@ -283,6 +283,40 @@ if (function_exists('register_sidebar')) {
 	));
 }
 
+/*******************************/
+/* Phone Number - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'phone-number',
+		'id'   => 'phone-number',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
+/*******************************/
+/* Phone Number Header - Widget */
+/*******************************/		
+	
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'phone-number-header',
+		'id'   => 'phone-number-header',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
 	
 /*******************************/
 /* Add Menus */

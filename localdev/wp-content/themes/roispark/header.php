@@ -49,9 +49,18 @@
 				</div>
 				<div class="col-xs-2">
 					<div class="pull-right">	
-						<ul class="social inline phone-number-padding">
-								<h1>512.XXX.XXX</h1>
-						</ul>
+						<div class="phone-number-padding" id="phone-number">
+	
+							<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('phone-number')) : else : ?>
+	
+							<div class="pre-widget">
+								<p><strong>Widgetized Area</strong></p>
+								<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+							</div>
+	
+							<?php endif; ?>
+	
+						</div>	
 					</div>
 				</div>
 			</header>
